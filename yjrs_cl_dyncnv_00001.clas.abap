@@ -17,8 +17,8 @@ CLASS yjrs_cl_dyncnv_00001 IMPLEMENTATION.
     FIELD-SYMBOLS: <lwa_bapireturn1> TYPE bapireturn1,
                    <lwa_message_info> TYPE ztl_cl_message_pool=>t_message_info.
 
-    ASSIGN i_source TO <lwa_bapireturn1>.
-    ASSIGN e_destination TO <lwa_message_info>.
+    ASSIGN iv_source TO <lwa_bapireturn1>.
+    ASSIGN ev_destination TO <lwa_message_info>.
 
     IF <lwa_bapireturn1> IS ASSIGNED AND
        <lwa_message_info> IS ASSIGNED.
